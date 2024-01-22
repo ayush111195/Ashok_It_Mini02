@@ -89,6 +89,9 @@ public class EligibilityServicesImpl implements EligibilityService {
 	@Override
 	public void generateExcel(HttpServletResponse response) throws Exception{
 		List<EligibilityDetails> entities  =eligibilityDetailsRepo.findAll();
+        for(EligibilityDetails entity: entities) {
+        	System.out.println(entity);
+        }
         HSSFWorkbook workbook=new HSSFWorkbook();            // this is provided by apachee poi for 
         HSSFSheet sheet= workbook.createSheet();
         HSSFRow headerRow=sheet.createRow(0);

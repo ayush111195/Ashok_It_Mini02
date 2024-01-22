@@ -41,7 +41,7 @@ public class AppRunner implements ApplicationRunner {    // this is call for put
     EligibilityDetails entity3 =new EligibilityDetails();
     entity3.setEligId(3);
     entity3.setName("Jhonypar");
-    entity3.setMobile(9455659288l);
+    entity3.setMobile(9476765765l);
     entity3.setGender('f');
     entity3.setSsn(46576765546l);
     entity3.setPlanName("ran");
